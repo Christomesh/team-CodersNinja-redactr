@@ -9,8 +9,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h2>make some magic here!!</h2>
+    <main class="container">
+        <h1 class="form-heading">Scramble! Scramble !! Scramble !!!</h1>
+        <form action="" style="padding-top: 0px;" class="form">
+            <div class="form_group">
+                <label for="text" class="form_group-label">Type or Paste the text here</label>
+                <textarea 
+                    name="text" id="text" 
+                    cols="30" rows="10" 
+                    placeholder="Your text here ..." required>
+                </textarea>
+                
+            </div>
+            <div class="form_group">
+                <label for="words-to-scamble" class="form_group-label">Word(s) to scramble</label>
+                <input 
+                    type="text" name="words-to-scamble" 
+                    id="words-to-scamble" class="words-to-scamble" 
+                    placeholder="Word(s) to scramble" required
+                />
+            </div>
+            <div class="form_group">
+                <label for="scramble-replacement" class="form_group-label">Scramble replacement</label>
+                <input 
+                    type="text" name="scramble-replacement" 
+                    id="scramble-replacement" class="scramble-replacement" 
+                    placeholder="Scramble replacement" required
+                />
+            </div>
+            <div class="form_group">
+                <button type="submit" class="btn-submit">Redactr</button>
+            </div>
+        </form>
+    </main>
+   
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
