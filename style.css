@@ -26,8 +26,9 @@ body{
 }
 
 .container{
-    width: 1200px;
-    max-width: 100%;
+    width: 90vw;
+    max-width: 1200px;
+/*     max-width: 100%; */
     min-height: 400px;
     margin:  auto;
     margin-top: auto;
@@ -41,9 +42,10 @@ body{
 }
 
 .form{
-    width: 60%;
-    margin: 20px auto;
-    padding: var(--padding);
+/*     width: 60%; */
+  max-width: 700px;
+  margin: 20px auto;
+  padding: var(--padding);
     
 }
 .form_group{
@@ -57,6 +59,11 @@ body{
     color: var(--custom-color);
     font-size: var(--medium-font-size);
 }
+
+#text {
+  resize: none;
+}
+
 textarea, input{
     padding: var(--input-padding);
     border-radius: var(--border-radius);
@@ -83,6 +90,23 @@ textarea, input:focus{
 }
 .btn-submit:hover{
     background-color: rgb(44, 106, 156);
+}
+
+#output-container {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+#output-container h4 {
+  color: var(--misc-color);
+  margin-bottom: 1rem;
+}
+
+#output-container div:first-of-type {
+  padding: 1rem;
+  min-height: 50px;
+  border-radius: 10px;
+  border: 2px solid var(--misc-color);
 }
 
 @media (max-width: 840px) {

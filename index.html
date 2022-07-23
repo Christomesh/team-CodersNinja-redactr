@@ -17,8 +17,8 @@
                 <textarea 
                     name="text" id="text" 
                     cols="30" rows="10" 
-                    placeholder="Your text here ..." required>
-                </textarea>
+                    placeholder="Your text here ..." required
+                ></textarea>
                 
             </div>
             <div class="form_group">
@@ -30,7 +30,7 @@
                 />
             </div>
             <div class="form_group">
-                <label for="scramble-replacement" class="form_group-label">Scramble replacement</label>
+                <label for="scramble-replacement" class="form_group-label">Scramble replacement (type a single character)</label>
                 <input 
                     type="text" name="scramble-replacement" 
                     id="scramble-replacement" class="scramble-replacement" 
@@ -38,9 +38,16 @@
                 />
             </div>
             <div class="form_group">
-                <button type="submit" class="btn-submit">Redactr</button>
+                <button type="submit" class="btn-submit" id="btn-submit">Redactr</button>
             </div>
         </form>
+      <div id="output-container">
+        <h4>Output:</h4>
+        <div>
+          <p id="output"></p>          
+        </div>
+        <div id="details"></div>
+      </div>
     </main>
    
 
