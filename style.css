@@ -106,7 +106,7 @@ textarea, input:focus{
   padding: 1rem;
   min-height: 50px;
   border-radius: 10px;
-  border: 2px solid var(--misc-color);
+  border: 1px solid var(--misc-color);
 }
 
 @media (max-width: 840px) {
